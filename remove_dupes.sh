@@ -6,5 +6,5 @@ set -eux
 input_file=$1
 output_file=$2
 
-sort input_file | uniq -d > output_file && sort input_file | uniq -u >> output_file
+sort $input_file | uniq -d > $output_file && sort $input_file | uniq -u >> $output_file
 
